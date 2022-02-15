@@ -22,10 +22,10 @@ function Home(praps){
 
 
     return(
-        <div>
-            <h1>Hello World!</h1>
+        <div className="the-whole-page">
+            <h1>Hello! Welcome to this website</h1>
                 <form onSubmit={handleSubmit}>
-                    <label>Add favorite class</label>
+                    <label>Add favorite class </label>
                     <input type = "text" value = {value} onChange = {handleChange}></input>
                     <button type = "submit">Add Class</button>
                 </form>
