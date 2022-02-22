@@ -1,5 +1,8 @@
 .my-classes{
-    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
 }
 
 .the-whole-page{

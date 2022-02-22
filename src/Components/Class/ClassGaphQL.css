@@ -1,16 +1,25 @@
-
-
-#title{
-    font-size: 1.8em;
+.class{
+    background-color: #233554;
+    width: 350px;
+    border: 6px solid #ccd6f6;
+    padding: 40px;
+    margin: 20px;
 
 }
 
-#department{
-    font-size: 1em;
+#input{
+    font-size: 1.4em;
+
+
+}
+
+#title{
+    font-size: 1.3em;
 
 }
 
 #description{
-    font-size: 1.5em;
+    font-size: 1.3em;
+    
 
 }
