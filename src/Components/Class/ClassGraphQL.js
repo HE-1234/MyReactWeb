@@ -19,6 +19,10 @@ function ClassGraphQL(props){
                     title
                     school
                     description
+                    instructor_history{
+                        name 
+                        ucinetid
+                    }
                 }
             }`
 
@@ -41,11 +45,37 @@ function ClassGraphQL(props){
 
     let info;
     if (classInfo){
+
+        console.log(classInfo)
+
+        let instructor_history = ""
+
+        if (classInfo.instructor_history){
+            instructor_history += "Previous instructors: "
+            for(let i = 0 ; i < classInfo.instructor_history.length; i++)
+            {
+                instructor_history += classInfo.instructor_history[i].name + ", "
+            }
+            instructor_history = instructor_history.substring(0,instructor_history.length-2)    
+        }
+
+
+
+
         info = 
-        <div className="information">
+        <div className="information" typeof="JavaScript">
             <p id="title">{classInfo.title}</p>
             <p id="description">{classInfo.description}</p>
+            <p id = "instructor_history">{instructor_history}</p>
+
+            
+
+            
         </div>
+
+
+        
+
     }else if(classInfo == null){
         info = <p>Class Not Found</p>
     }
